@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hier mag jij een titel verzinnen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+  <h2 id="C1"></h2>
+  <header  class="header" id="myHeader">
+    <h1 id="myHeader">Mijn eerste vakken</h1>
+    <div class="topnav">
+  <a href="#C1">IPMEDT2</a>
+  <a href="#C2">IMTD1</a>
+  <a href="#C3">ISTAT</a>
+  <a href="#C4">CONTACT</a>
+</div>
+  </header>
+  <main>
+    <div class="content">
+      <article>
+        <header>
+          <h2>IPMEDT2</h2>
+        </header>
+        <section class="sections">
+          <header>
+            <h3>De module</h3>
+          </header>
+
+          <p>IPMEDT2 is het project van Interactie-technologie. Het project staat in het teken van het realiseren van een interactief verhaal. Dit verhaal wordt mobile-first ontwerpen en gerealiseerd, de mobiele versie staat dus centraal.</p>
+          <p>Het ontwerpen en realiseren van deze experience doen we aan de hand van Design Thinking. Een iteratief proces waarbij we naar een oplossing werken waar een "wicked-problem" wordt opgelost.</p>
+        </section>
+        <section class="sections">
+          <header>
+            <h3>Fases van Design Thinking</h3>
+          </header>
+          <figure>
+            <img id="myImage--1" src="./img/design-thinking.png" alt="Het Design Thinking Proces">
+          </figure>
+          <div class="ol--box">
+            <h2>Design Thinking</h2>
+            <ol>
+              <li onclick="myFunction1()">empathize</li>
+              <li onclick="myFunction2()">Define</li>
+              <li onclick="myFunction3()">Ideate</li>
+              <li onclick="myFunction4()">Protoype</li>
+              <li onclick="myFunction5()">Test</li>
+              <p id="demo"></p>
+            </ol>
+          </div>
+          <h5>Let op: Design Thinking is een iteratief proces. Meestal doorlop je verschillende fases meerdere keren!</h5>
+        </section>
+        <section class="sections">
+        <div class="ol--box">
+          <h2>Deliverables</h2>
+            <h2 id="C2"></h2>
+          <ol>
+            <!-- TODO: Lijstje met deliverables -->
+            <li onclick="myFunction6()">Deskresearch</li>
+            <li onclick="myFunction7()">Persona</li>
+
+            <li onclick="myFunction8()">Interviews</li>
+            <p id="demo1"></p>
+
+          </ol>
+        </div>
+        </section>
+      </article>
+      <article>
+        <header>
+          <h2>IMTD1</h2>
+        </header>
+        <section class="sections">
+          <header>
+            <h3>De module</h3>
+          </header>
+          <p>IMTD1 staat in het teken van <abbr title="User experience">UX-design</abbr> In dit vak komen verschillende onderwerpen aan bod, zoals het maken van een persona, het maken van een gebruiksvriendelijke experience en <abbr title="User interface-design">UI-design.</abbr> </p>
+          <p>Bij UI-Design zijn er verschillende principes voor het maken van een gebruiksvriendelijke UI. Onderstaande principes zijn onder andere belangrijk.</p>
+          <br>
+          <br>
+          <div class="ol--box">
+            <ol>
+              <h2>UI-Design principes</h2>
+              <li onclick="myFunction9()">Kleur</li>
+              <li onclick="myFunction10()">Typografie</li>
+              <li onclick="myFunction11()">Rastering</li>
+              <li onclick="myFunction12()">Margin / Padding</li>
+              <li onclick="myFunction13()">Affordances & signifiers</li>
+              <p id="demo2"></p>
+            </ol>
+          </div>
+          <figure>
+            <img id="myImage--2" src="./img/sketch.jpg" alt="Het meest ingewikelde ontwerp begint bij een schets">
+          </figure>
+        </section>
+      </article>
+      <article>
+        <header>
+          <h2 id="C3">ISTAT<!-- TODO: Keuzevak titel --></h2>
+        </header>
+        <section>
+          <header>
+            <h3>Statestiek voor IT-ers</h3>
+            <br>
+          </header>
+          <!-- TODO: Keuzevak beschrijving in eigen worden -->
+        </section>
+        <section>
+          <header>
+            <h3>Handig om te weten</h3>
+          </header>
+          <!-- TODO: Deze sectie vullen met iets m.b.t. het keuzevak  -->
+            <p>Statistiek voor IT-ers.Bij ISTAT ga je aan de slag met statistieken die relevant zijn voor de ICTer, de functies en toepassingen die hiermee gemoeid zijn. Ook ga je data ‘vertalen’ naar informatie, zodat je er daadwerkelijk iets mee kan.</p>
+            <br>
+          <figure>
+            <!-- TODO: een bijpassend plaatje -->
+            <img  id="myImage--3" src="./img/statistiek.jpg" alt="deze tekst moet je nog vervangen">
+            <br>
+            <br>
+          </figure>
+        </section>
+      </article>
+      <section>
+        <header>
+          <h2 id="C4">Kom in contact</h2>
+        </header>
+    </div>
+        <form class="myForm" action="index.html" method="get">
+
+        <div class="test">
+          <label id="formName--1" class="formLable" for="naam">Naam</label>
+          <input id="formInput--1" type="text" id="naam" name="naam" value="" placeholder="Henk">
+        </div>
+
+        <div class="test">
+          <label id="formName--2" class="formLable" for="email">Email adres</label>
+          <input id="formInput--2" type="email" id="email" name="email" value="" placeholder="henk@xs4all.nl">
+        </div>
+
+        <div class="test">
+          <label id="formName--3" class="formLable" for="vraag">Jouw vraag</label>
+          <input id="formInput--3" type="text" id="vraag" name="text" value="" placeholder="Hoezo moet je starwars in een andere volgorde kijken?">
+        </div>
+        </form>
+      </section>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>
