@@ -1,8 +1,187 @@
-*,*::before,*::after {
-  padding:0;
-  margin:0;
-  box-sizing:border-box;
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/*sections */
+section {
+  min-height: 100vh;
+}
+
+.section--2 {
+  background-color: #212121;
+  background-image: url('../img/img3.webp');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  cursor: url('../img/pickaxeUp.webp'), auto;
+}
+
+body {
+  background-color: #132743;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.headerLogo {
+  max-height: 50px;
+}
+
+header {
+  max-height: 50px;
+  width: 100%;
+  background-color: #212121;
+}
+
+/* img css */
+.texture {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+/* grid start */
+.mineGrid {
+  grid-template-columns: 10vw 1fr 1fr 10vw;
+  grid-template-rows: repeat(4, 20vh);
+  display: grid;
+  padding-top: 5rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.mineGrid:active {
+  cursor: url('../img/pickaxeDown.webp'), auto;
+}
+
+.gridItem1 {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  border: 1px solid black;
+  background-image: url('../img/img1.webp');
+  background-size: cover;
+  text-align: center;
+}
+
+.gridItem1:hover {
+  background-image: url('../img/coltan.webp');
+  box-shadow: inset 0 0 0 1px red;
+  background-size: cover;
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 2;
+  z-index: 10;
+  background-position: bottom;
+}
+
+.gridItem2 {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  border: 1px solid black;
+  background-image: url('../img/img1.webp');
+  background-size: cover;
+  text-align: center;
+}
+
+.gridItem2:hover {
+  background-image: url('../img/kobalt.webp');
+  box-shadow: inset 0 0 0 1px red;
+  background-size: cover;
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 2;
+  z-index: 10;
+  background-position: bottom;
+}
+
+.gridItem3 {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+  border: 1px solid black;
+  background-image: url('../img/img1.webp');
+  background-size: cover;
+  text-align: center;
+}
+
+.gridItem4 {
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+  border: 1px solid black;
+  background-image: url('../img/img1.webp');
+  background-size: cover;
+  text-align: center;
+}
+
+.gridItem5 {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  border: 1px solid black;
+  background-image: url('../img/img1.webp');
+  background-size: cover;
+  text-align: center;
+}
+
+.gridItem6 {
+  grid-column: 3 / span 1;
+  grid-row: 3 / span 1;
+  border: 1px solid black;
+  background-image: url('../img/img1.webp');
+  background-size: cover;
+  text-align: center;
+}
+
+.gridItem7 {
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+  border: 1px solid black;
+  background-image: url('../img/img1.webp');
+  background-size: cover;
+  text-align: center;
+}
+
+.gridItem8 {
+  grid-column: 3 / span 1;
+  grid-row: 4 / span 1;
+  border: 1px solid black;
+  background-image: url('../img/img1.webp');
+  background-size: cover;
+  text-align: center;
+}
+
+/* text css */
+.gridItem1>h2 {
+  font-size: 5rem;
+  color: #989c60;
+  font-family: roboto;
+  padding-top: 1rem;
+  text-shadow: 1px 1px black;
+}
+
+.gridItem2>h2 {
+  font-size: 5rem;
+  color: #748ab8;
+  font-family: roboto;
+  padding-top: 1rem;
+  text-shadow: 1px 1px black;
+}
+
+.gridItem3>h2 {
+  font-size: 5rem;
+  color: #748ab8;
+  font-family: roboto;
+  padding-top: 1rem;
+  text-shadow: 1px 1px black;
+}
+
+.gridItem4>h2 {
+  font-size: 5rem;
+  color: #989c60;
+  font-family: roboto;
+  padding-top: 1rem;
+  text-shadow: 1px 1px black;
 }
